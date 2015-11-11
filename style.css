@@ -46,7 +46,7 @@ h1,h2,h4,h5,h6 {
 		height: 350px;
 		overflow: hidden;
 		margin: 100px auto;
-		position: relative;
+		position: relative
 		background: url('../images/dot.gif') left 45px repeat-x;
 	}
 		#dates {
