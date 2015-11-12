@@ -1,0 +1,33 @@
+$timeline-content-height: 500px;
+
+#timeline-dates {
+   li {
+      text-align: center;
+      list-style: none;
+   }
+   position: fixed;
+   background-color: lightgrey;
+   z-index: 1;
+   width: 100%;
+}
+
+#timeline-container {
+   margin-top: 12%;
+   width: 100%;
+   position: fixed;
+   height: $timeline-content-height;
+   background: url('assets/images/background.png');
+   overflow-y: hidden;
+}
+
+#currentEvent {
+   .timeline-content {
+      height: $timeline-content-height;
+      background-color: transparent;
+      color: white;
+   }
+}
+
+.row {
+   max-width: 100%;
+}

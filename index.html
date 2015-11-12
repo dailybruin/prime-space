@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>title</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="row" id="timeline-dates">
+	   <!-- <div class="row"> -->
+	      <li class="small-3 medium-3 large-2 columns"><a href="#1">date1</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#2">date2</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#3">date3</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#4">date4</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#5">date5</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#6">date6</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#7">date7</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#8">date8</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#9">date9</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#10">date10</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#11">date11</a></li>
+	      <li class="small-3  medium-3 large-2 columns"><a href="#12">date12</a></li>
+	   <!-- </div> -->
+	</div>
+
+	<div class="row" id="timeline-container">
+		<div id="currentEvent">
+			<div class="small-12 columns timeline-content" id="1">
+				<img src="">
+			</div>
+			<div class="small-12 columns timeline-content" id="2">content</div>
+			<div class="small-12 columns timeline-content" id="3">fd</div>
+			<div class="small-12 columns timeline-content" id="4">we</div>
+			<div class="small-12 columns timeline-content" id="5">fe</div>
+			<div class="small-12 columns timeline-content" id="6">w</div>
+			<div class="small-12 columns timeline-content" id="7">1241</div>
+			<div class="small-12 columns timeline-content" id="8">23</div>
+			<div class="small-12 columns timeline-content" id="9">rt</div>
+			<div class="small-12 columns timeline-content" id="10">fes</div>
+			<div class="small-12 columns timeline-content" id="11">es</div>
+			<div class="small-12 columns timeline-content" id="12">ngf</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+	<script>
+		// Scroll Speed
+		$('a[href^="#"]').on('click',function (e) {
+		    e.preventDefault();
+
+		    var target = this.hash;
+		    var $target = $(target);
+
+		    $('#timeline-container').stop().animate({
+		        'scrollTop': $target.offset().top
+		    }, 1000, 'swing', function () {
+		        window.location.hash = target;
+		    });
+		});
+
+	</script>
+	
+</body>
+</html>
