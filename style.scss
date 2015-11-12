@@ -7,7 +7,11 @@ $timeline-width: 100%;
 }
 
 body {
-   background: url('assets/images/background.png');
+   background: url('assets/images/background.png') no-repeat center center; ;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;  
    font-family: Georgia, serif;
    color: #fff;
    font-size: 14px;
@@ -27,17 +31,19 @@ a {
    }
 }
 
+h1 {
+   font-size: 3em;
+   color: white;
+   text-align: center;
+}
 
-h1,h2,h4,h5,h6 {
+h2,h4,h5,h6 {
    text-align: center;
    color: #ccc;
    text-shadow: #000 1px 1px 2px;
    margin-bottom: 5px;
 }
 
-h1 {
-   font-size: 18px;
-}
 h2 {
    font-size: 14px;
 }
@@ -48,11 +54,10 @@ h2 {
 }
 
 #timeline {
-   width: $timeline-width;
    height: $timeline-height;
    overflow: hidden;
    margin: 1em auto;
-   //position: relative;
+   position: relative;
    background: url('../images/dot.gif') 3px top repeat-y;
 }
    #dates {
@@ -79,10 +84,7 @@ h2 {
    }
    
    #issues {
-      width: 600px;
       height: $timeline-height;
-      // overflow: hidden;
-      //float: left;
       li {
          width: 100%;
          height: $timeline-height;
