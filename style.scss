@@ -1,5 +1,6 @@
 $timeline-height: 300px;
 $timeline-width: 100%;
+$title-color: #ffcc00;
 
 * {
    margin: 0;
@@ -7,7 +8,7 @@ $timeline-width: 100%;
 }
 
 body {
-   background: url('assets/images/background.png') no-repeat center center; ;
+   background: url('assets/images/background.png') center center; ;
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -27,13 +28,13 @@ a {
    transition: 0.5s;
    &:hover,
    &.selected {
-      color: #ffcc00;
+      color: $title-color;
    }
 }
 
 h1 {
    font-size: 3em;
-   color: white;
+   color: $title-color;
    text-align: center;
 }
 
@@ -92,7 +93,7 @@ h2 {
 
          img {
              height: $timeline-height * .5;
-             width: 30%;
+             width: 40%;
          }
          h1 {
             color: #ffcc00;
@@ -153,3 +154,10 @@ h2 {
       #prev.disabled {
          opacity: 0.2;
       }
+
+main {
+   background-color: rgba(255,255,255,0.5);
+   margin: 5%;
+   height: 100%;
+   padding: 1em;
+}
