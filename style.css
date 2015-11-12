@@ -49,23 +49,23 @@ h2 {
   background: url("../images/dot.gif") 3px top repeat-y; }
 
 #dates {
-  width: 100px;
+  width: 150px;
   height: 300px;
   overflow: hidden;
   float: left; }
   #dates li {
     list-style: none;
-    width: 100px;
+    width: 150px;
     height: 100px;
-    line-height: 100px;
-    font-size: 24px;
+    line-height: 10px;
+    font-size: 16px;
     padding-left: 10px;
     background: url("../images/biggerdot.png") left center no-repeat; }
   #dates a {
-    line-height: 38px;
-    padding-bottom: 10px; }
+    line-height: 25px;
+    padding-bottom: 15px; }
   #dates .selected {
-    font-size: 38px; }
+    font-size: 28px; }
 
 #issues {
   height: 300px; }
