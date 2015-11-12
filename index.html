@@ -2,67 +2,100 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	
 	<title>title</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="style.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="jquery.timelinr-0.9.54.js"></script>
+	<script>
+		$(function(){
+			$().timelinr({
+				orientation: 	'vertical',
+				issuesSpeed: 	300,
+				datesSpeed: 	100,
+				arrowKeys: 		'true',
+				startAt:		3
+			})
+		});
+	</script>
+
 </head>
 
 <body>
-	<div class="row" id="timeline-dates">
-	   <!-- <div class="row"> -->
-	      <li class="small-3 medium-3 large-2 columns"><a href="#1">date1</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#2">date2</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#3">date3</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#4">date4</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#5">date5</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#6">date6</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#7">date7</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#8">date8</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#9">date9</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#10">date10</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#11">date11</a></li>
-	      <li class="small-3  medium-3 large-2 columns"><a href="#12">date12</a></li>
-	   <!-- </div> -->
-	</div>
-
-	<div class="row" id="timeline-container">
-		<div id="currentEvent">
-			<div class="small-12 columns timeline-content" id="1">
-				<img src="">
-			</div>
-			<div class="small-12 columns timeline-content" id="2">content</div>
-			<div class="small-12 columns timeline-content" id="3">fd</div>
-			<div class="small-12 columns timeline-content" id="4">we</div>
-			<div class="small-12 columns timeline-content" id="5">fe</div>
-			<div class="small-12 columns timeline-content" id="6">w</div>
-			<div class="small-12 columns timeline-content" id="7">1241</div>
-			<div class="small-12 columns timeline-content" id="8">23</div>
-			<div class="small-12 columns timeline-content" id="9">rt</div>
-			<div class="small-12 columns timeline-content" id="10">fes</div>
-			<div class="small-12 columns timeline-content" id="11">es</div>
-			<div class="small-12 columns timeline-content" id="12">ngf</div>
-		</div>
-	</div>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-	<script>
-		// Scroll Speed
-		$('a[href^="#"]').on('click',function (e) {
-		    e.preventDefault();
-
-		    var target = this.hash;
-		    var $target = $(target);
-
-		    $('#timeline-container').stop().animate({
-		        'scrollTop': $target.offset().top
-		    }, 1000, 'swing', function () {
-		        window.location.hash = target;
-		    });
-		});
-
-	</script>
 	
+	<div id="timeline">
+		<ul id="dates">
+			<li><a href="#1900" class="selected">1900</a></li>
+			<li><a href="#1930">1930</a></li>
+			<li><a href="#1944">1944</a></li>
+			<li><a href="#1950">1950</a></li>
+			<li><a href="#1971">1971</a></li>
+			<li><a href="#1977">1977</a></li>
+			<li><a href="#1989">1989</a></li>
+			<li><a href="#1999">1999</a></li>
+			<li><a href="#2001">2001</a></li>
+			<li><a href="#2011">2011</a></li>
+		</ul>
+		<ul id="issues">
+			<li id="1900" class="selected">
+				<h1>1900</h1>
+				<img src="assets/images/2011.svg"  />
+				
+				<p>Donec semper quam scelerisque tortor dictum gravida.</p>
+			</li>
+			<li id="1930">
+				<h1>1930</h1>
+				<img src="assets/images/july2014.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. </p>
+			</li>
+			<li id="1944">
+				<h1>1944</h1>
+				<img src="assets/images/feb2013.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. </p>
+			</li>
+			<li id="1950">
+				<h1>1950</h1>
+				<img src="assets/images/march2015.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu con</p>
+			</li>
+			<li id="1971">
+				<h1>1971</h1>
+				<img src="assets/images/sept2015.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar</p>
+			</li>
+			<li id="1977">
+				<h1>1977</h1>
+				<img src="assets/images/august2016.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. </p>
+			</li>
+			<li id="1989">
+				<h1>1989</h1>
+				<img src="assets/images/late2016early2017.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. </p>
+			</li>
+			<li id="1999">
+				<h1>1999</h1>
+				<img src="assets/images/2011.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit. </p>
+			</li>
+			<li id="2001">
+				<h1>2001</h1>
+				<img src="assets/images/2016.svg" />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit.</p>
+			</li>
+			<li id="2011">
+				<h1>2011</h1>
+				<img src="assets/images/2020.svg"  />
+				<p>Donec semper quam scelerisque tortor dictum gravida. In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit, sem diam ultrices mauris, eu consequat purus metus eu velit.</p>
+			</li>
+		</ul>
+		<div id="grad_top"></div>
+		<div id="grad_bottom"></div>
+		<a href="#" id="next">+</a>
+		<a href="#" id="prev">-</a>
+	</div>
+		
 </body>
 </html>
+
