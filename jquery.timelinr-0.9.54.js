@@ -54,7 +54,7 @@ jQuery.fn.timelinr = function(options){
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
 		} else if(settings.orientation == 'vertical') {
 			$(settings.issuesDiv).height(heightIssue*howManyIssues);
-			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/2-heightDate/2);
+			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/4-heightDate/4);
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
 		}
 		

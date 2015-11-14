@@ -2,8 +2,10 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>title</title>
+	<title>A Space to Dream</title>
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -23,84 +25,189 @@
 </head>
 
 <body>
-	<h1 class="row">A Space to Dream</h1>
-	
-	<div class="row" id="timeline">
-		<ul id="dates">
-			<li><a href="#1900" class="selected">2011</a></li>
-			<li><a href="#1930">Feb. 27, 2013</a></li>
-			<li><a href="#1944">July 2014</a></li>
-			<li><a href="#1950">March 6, 2015</a></li>
-			<li><a href="#1971">Sept. 19, 2015</a></li>
-			<li><a href="#1977">Nov. 8, 2015</a></li>
-			<li><a href="#1989">2016</a></li>
-			<li><a href="#1999">August 2016</a></li>
-			<li><a href="#2001">Late 2016/Early 2017</a></li>
-			<li><a href="#2011">2020</a></li>
-		</ul>
-		<ul id="issues">
-			<li id="1900" class="selected">
-				<h1>2011</h1>
-				<img src="assets/images/2011.svg"  />
-				<p>The UCLA Institute of Planets and Exoplanets, or iPLEX, established by David Jewett, an earth, planetary and space sciences professor.</p>
-			</li>
-			<li id="1930">
-				<h1>Feb. 27, 2013</h1>
-				<img src="assets/images/july2014.svg"  />
-				<p>The Present-Day Habitability of Mars conference was held at UCLA.</p>
-			</li>
-			<li id="1944">
-				<h1>July 2014</h1>
-				<img src="assets/images/feb2013.svg"  />
-				<p>UCLA professor David Paige and his team selected to build a radar for Mars Rover 2020 that will map out the subterranean layer of Mars.</p>
-			</li>
-			<li id="1950">
-				<h1>March 6, 2015</h1>
-				<img src="assets/images/march2015.svg"  />
-				<p>The spacecraft Dawn enters orbit of asteroid Ceres between Mars and Jupiter in a mission led by UCLA professor Christopher Russell.</p>
-			</li>
-			<li id="1971">
-				<h1>Sept. 19, 2015</h1>
-				<img src="assets/images/sept2015.svg"  />
-				<p>iPlex hosts International Observe the Moon Night on the roof of the Mathematical Sciences Building.</p>
-			</li>
-			<li id="1977">
-				<h1>Nov. 8, 2015</h1>
-				<!--<img src="assets/images/august2016.svg"/>-->
-				<p>Annual Exploring Your Universe fair held at the Court of Sciences on UCLA's campus.</p>
-			</li>
-			<li id="1989">
-				<h1>2016</h1>
-				<img src="assets/images/2016.svg"  />
-				<p>iPLEX will host the Asteroid-Meteorite Connection Workshop at UCLA.</p>
-			</li>
-			<li id="1999">
-				<h1>August 2016</h1>
-				<img src="assets/images/august2016.svg"/>
-				<p>Forty rodents will blast off to the International Space Station under a project led by UCLA dentists, plastic surgeons and bio-engineers in search of treatments for osteoporosis.</p>
-			</li>
-			<li id="2001">
-				<h1>Late 2016/Early 2017</h1>
-				<img src="assets/images/late2016early2017.svg"  />
-				<p>UCLA's first fully built satellite, the Electron Losses and Fields Investigation Cube Satellite, or ELFIN CubeSat, ready for space launch.</p>
-			</li>
-			<li id="2011">
-				<h1>2020</h1>
-				<img src="assets/images/2020.svg"  />
-				<p>NASA will send Mars Rover 2020 to Mars.</p>
-			</li>
-		</ul>
-		<div id="grad_top"></div>
-		<div id="grad_bottom"></div>
-		<a href="#" id="next">+</a>
-		<a href="#" id="prev">-</a>
+	<div id="header">
+		<h1 id="title" class="row">A Space to Dream</h1>
+		<h6 id="author">Allison Ong</h6>
+		
+		<div class="row" id="timeline">
+					<div id="prev">^</div>
 
+			<ul id="dates">
+				<li><a href="#1900" class="selected">2011</a></li>
+				<li><a href="#1930">Feb. 27, 2013</a></li>
+				<li><a href="#1944">July 2014</a></li>
+				<li><a href="#1950">March 6, 2015</a></li>
+				<li><a href="#1971">Sept. 19, 2015</a></li>
+				<li><a href="#1977">Nov. 8, 2015</a></li>
+				<li><a href="#1989">2016</a></li>
+				<li><a href="#1999">August 2016</a></li>
+				<li><a href="#2001">Late 2016/Early 2017</a></li>
+				<li><a href="#2011">2020</a></li>
+			</ul>
+						<div id="next">v</div>
+
+			<ul id="issues">
+				<li id="1900" class="selected">
+					<h1>2011</h1>
+					<img src="assets/images/2011.svg"  />
+					<p>The UCLA Institute of Planets and Exoplanets, or iPLEX, established by David Jewett, an earth, planetary and space sciences professor.</p>
+				</li>
+				<li id="1930">
+					<h1>Feb. 27, 2013</h1>
+					<img src="assets/images/july2014.svg"  />
+					<p>The Present-Day Habitability of Mars conference was held at UCLA.</p>
+				</li>
+				<li id="1944">
+					<h1>July 2014</h1>
+					<img src="assets/images/feb2013.svg"  />
+					<p>UCLA professor David Paige and his team selected to build a radar for Mars Rover 2020 that will map out the subterranean layer of Mars.</p>
+				</li>
+				<li id="1950">
+					<h1>March 6, 2015</h1>
+					<img src="assets/images/march2015.svg"  />
+					<p>The spacecraft Dawn enters orbit of asteroid Ceres between Mars and Jupiter in a mission led by UCLA professor Christopher Russell.</p>
+				</li>
+				<li id="1971">
+					<h1>Sept. 19, 2015</h1>
+					<img src="assets/images/sept2015.svg"  />
+					<p>iPlex hosts International Observe the Moon Night on the roof of the Mathematical Sciences Building.</p>
+				</li>
+				<li id="1977">
+					<h1>Nov. 8, 2015</h1>
+					<!--<img src="assets/images/august2016.svg"/>-->
+					<p>Annual Exploring Your Universe fair held at the Court of Sciences on UCLA's campus.</p>
+				</li>
+				<li id="1989">
+					<h1>2016</h1>
+					<img src="assets/images/2016.svg"  />
+					<p>iPLEX will host the Asteroid-Meteorite Connection Workshop at UCLA.</p>
+				</li>
+				<li id="1999">
+					<h1>August 2016</h1>
+					<img src="assets/images/august2016.svg"/>
+					<p>Forty rodents will blast off to the International Space Station under a project led by UCLA dentists, plastic surgeons and bio-engineers in search of treatments for osteoporosis.</p>
+				</li>
+				<li id="2001">
+					<h1>Late 2016/Early 2017</h1>
+					<img src="assets/images/late2016early2017.svg"  />
+					<p>UCLA's first fully built satellite, the Electron Losses and Fields Investigation Cube Satellite, or ELFIN CubeSat, ready for space launch.</p>
+				</li>
+				<li id="2011">
+					<h1>2020</h1>
+					<img src="assets/images/2020.svg"  />
+					<p>NASA will send Mars Rover 2020 to Mars.</p>
+				</li>
+			</ul>
+
+
+
+
+	<!-- 		<div id="grad_top"></div>
+			<div id="grad_bottom"></div>
+			<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a> -->
+
+		</div>
 	</div>
 
 	<main>
-		content cosjakdsifsdjnkfnsjdnfjs
-		article body
-		sadkas
+		<p>The movement to colonize Mars was founded by humans who dream of seeing footprints in the crimson dust of the Red Planet.</p>
+
+		<p>Technological advances have made interplanetary travel possible, if not yet feasible. In October, NASA released a plan detailing the steps it&rsquo;s taking to land astronauts on Mars as early as the 2030s.</p>
+
+		<p>But these steps taken for mankind have not been taken alone. Planetary scientists across the globe, including those at UCLA, help fuel NASA&rsquo;s goals daily, sketching new layers of detail upon our existing knowledge of space. In the past year alone, faculty-led initiatives have circled a dwarf planet near Jupiter, designed a 3-D printed home for future Martians and discovered a new planet 100 light-years away.</p>
+
+		<p>&ldquo;The real top-level question in astronomy and planetary science is about the origin and distribution of life,&rdquo; said David Jewitt, an earth, planetary and space sciences professor at UCLA. &ldquo;That&rsquo;s ultimately what we would like to know &ndash; what I would like to know for sure.&rdquo;</p>
+
+		<p>UCLA planetary science organizations such as Astronomy Live! and the Institute for Planets and Exoplanets, or iPLEX, aim to inspire the next generation of scientists through outreach on and off campus. Scientists and engineers at UCLA continue to pursue the research questions most intriguing to planetary science: How does our Earth work? How can we find alien life? What exists beyond our stratosphere?</p>
+
+		<p>A curiosity about space begins with the students.</p>
+
+		<p>Stargazing in school</p>
+
+		<p>Icy comets, asteroids and other celestial bodies rain about 40,000 tons of primitive cosmic dust on Earth every year, occasionally igniting at our atmosphere&rsquo;s edge to paint bright meteoric strokes across the canvas of our sky.</p>
+
+		<p>Real shooting stars are difficult to capture, study or explain to kids. That&rsquo;s when science educators turn to the kitchen.</p>
+
+		<p>&ldquo;Comets are called dirty snowballs for a reason,&rdquo; explains Dave Milewski, gritting his teeth as he wrestles with a bag of Windex, sand and corn syrup threatening to explode within a furious cloud of vaporizing dry ice. Milewski, a graduate student in astronomy, is recording a comet-making demonstration for the iPLEX website. He manages to pack the creamy brown mush into a sphere and cradles it beneath his lamp; the comet&rsquo;s liquid particles boil and hop from the surface like popcorn.</p>
+
+		<p>The iPLEX faculty has demonstrated this process to kids and families at the annual Exploring Your Universe outreach event. Representatives from iPLEX, UCLA science departments and local organizations give families rocket demos, science lectures and planetarium shows on UCLA&rsquo;s campus every November. More than 6,000 people attended the event in 2014.</p>
+
+		<p>iPLEX is a networking and educational institution for more than 100 faculty members, researchers and graduate students who study planetary science across departmental lines, said Jewitt, founder and director of iPLEX.</p>
+
+		<p>Since its launch in 2011, iPLEX has teamed up with graduate student group Astronomy Live! to bring space education to local schools six to eight times a month, showing curious students how to observe the sun using solar telescopes or construct models of the galaxy to scale.</p>
+
+		<p>Schools from Central Valley to Manhattan Beach have requested a taste of space from UCLA, said iPLEX director's assistant Ivy Curren. iPLEX is also working to secure grants that would bring multiple schools to UCLA&rsquo;s campus for large events during the school year.</p>
+
+		<p>&ldquo;Every 5-year-old is kind of a scientist,&rdquo; Jewitt said. &ldquo;You play with everything, and that&rsquo;s how you figure out how to be a person. The real question is how to keep people with that childlike interest in science.&rdquo;</p>
+
+		<p>Just ask Milewski.</p>
+
+		<p>Milewski &ndash; who, as a child, spent hours poring over astronomy books in the library &ndash;once read a theory about how the sun, in 4 billion years, would grow into a red giant and consume the Earth.</p>
+
+		<p>A 6-year-old Milewski became very, very concerned with the future of humanity.</p>
+
+		<p>&ldquo;Ever since then, I&rsquo;m always thinking about space,&rdquo; Milewski said. &ldquo;Most people want to know what the origin of life is &ndash; what&rsquo;s our place in the universe. Even if I could just take people a few steps of the way, that would be my life&rsquo;s work, and I would be very happy with that.&rdquo;</p>
+
+		<p>A painted comet streaks across the yellow wall behind his desk in the &ldquo;comet room,&rdquo; where he toils daily to study digital images of celestial objects called active asteroids. Observations have revealed that these rocky bodies can &ldquo;spit&rdquo; ice in intermittent spurts, sometimes with the force of a nuclear explosion at 5 kilometers per second.</p>
+
+		<p>Milewski talked animatedly about the science of asteroids, satellites, brown dwarfs and space exploration. Still, he said he doesn&rsquo;t want to force science on anyone; he only hopes to get people just as excited about science as he is.</p>
+
+		<p>Many UCLA students already are.</p>
+
+		<p>Mission Control</p>
+
+		<p>On a regular Tuesday in the Mathematical Sciences Building, engineers pop a little satellite out of an oven at 212 degrees Fahrenheit.</p>
+
+		<p>Without its green circuit boards, the Electron Losses and Fields Investigation, or ELFIN, satellite resembles the bare framework of a house. A researcher throws on his lab coat and begins to clothe the miniature satellite, known as CubeSat, in circuit boards with special fasteners, showing a fellow researcher how to select the right screwdriver for the job.</p>
+
+		<p>In late 2016 or early 2017, NASA will shoot the satellite into orbit so it can analyze space weather phenomena. NASA and the National Science Foundation have awarded ELFIN more than $1 million in funding since NASA selected it for the CubeSat Launch Initiative in 2014.</p>
+
+		<p>The ELFIN CubeSat will circle the Earth, analyzing interactions between Earth&rsquo;s magnetic field and charged particles emitted from the sun. These interactions have numerous consequences on space weather, such as creating &ldquo;killer electrons&rdquo; harmful to spacecraft or giving us the aurora borealis &ndash; the northern lights we see tracing iridescent lines over our planet&rsquo;s poles.</p>
+
+		<p>ELFIN researchers mean serious business. Some of them also happen to be undergraduate students at UCLA.</p>
+
+		<p>&ldquo;The best part about this project is bringing a concept to life, and that&rsquo;s the magic of it,&rdquo; said Lydia Bingley, ELFIN project manager and a graduate student in geophysics and space physics. &ldquo;This model existed on software simulations, and then we fabricated it in-house. ... Students essentially run the show.&rdquo;</p>
+
+		<p>On Oct. 7, the students transported their satellite prototype to Virginia for vibration testing, where machines vigorously shook the satellite to simulate launch into orbit. ELFIN CubeSat passed the test.</p>
+
+		<p>&ldquo;This is the future of education,&rdquo; said Vassilis Angelopoulos, an earth, planetary and space sciences professor who founded ELFIN in 2010. &ldquo;Whether ELFIN researchers go into academia or research, they (will apply) the same skills, solving challenging questions they believe in. That&rsquo;s the recipe, and they learn it now.&rdquo;</p>
+
+		<p>A class at UCLA also gives students the opportunity to conduct hands-on research concerning the sky. Pauline Arriaga, an astronomy graduate student, teaches Astronomy 180: &ldquo;Astrophysics Laboratory,&rdquo; where students can conduct research on UCLA&rsquo;s largest telescope.</p>
+
+		<p>Arriaga recently upgraded the camera of the 41-year-old Cassegrain, which will sit within a white dome on the roof of the Mathematical Sciences Building until her class in spring quarter. She flips a switch on the hulking, cannon-like telescope, prompting a deep mechanical hum. A slice of the dome peels back to reveal a cloudy night.</p>
+
+		<p>&ldquo;What we can do is study systems and formation &ndash; stars that are being formed,&rdquo; said Arriaga, clicking through infrared photos taken of the Orion Nebula. The purple, flame-like dust clouds surrounding the nebula &ndash; a birthplace for stars &ndash; are only visible to the human eye through an infrared filter.</p>
+
+		<p>&ldquo;This is my telescope,&rdquo; Arriaga joked, tinkering with the computers and controls within the dome. &ldquo;This one will keep going for a very long time.&rdquo;</p>
+
+		<p>Spacewalk</p>
+
+		<p>As a UCLA professor, David Paige may not breathe Martian air during his lifetime, but the scientific contraption he&rsquo;s helping to build might get a whiff.</p>
+
+		<p>In 2014, NASA selected a radar designed by the earth, planetary and space sciences professor and his colleagues to outfit the Mars 2020 rover, which will depart for Mars in five years. The Radar Imager for Mars&rsquo; Subsurface Experiment, or RIMFAX, is a ground-penetrating radar that will create a 2-D map of the Red Planet&rsquo;s subterranean layers.</p>
+
+		<p>&ldquo;My colleague from Norway called me up and asked me if I wanted to get involved,&rdquo; said Paige, chuckling. &ldquo;It&rsquo;s a little bit like a couple guys deciding to take a weekend trip to Las Vegas.&rdquo;</p>
+
+		<p>In 2013, Paige chaired the international Present-Day Habitability of Mars conference at UCLA. During the broadcast event, experts from all over the world, including from Russia and Germany, discussed the prospects and evidence of biological activity on Mars.</p>
+
+		<p>&ldquo;Understanding our place in the solar system and universe is important culturally, just to give people perspective,&rdquo; Paige said. &ldquo;I think it&rsquo;s also the function of a university to reach out to the community and share what we&rsquo;re learning, discovering or teaching.&rdquo;</p>
+
+		<p>NASA&rsquo;s recent announcements of salt water on Mars and water-ice regions on Pluto have garnered widespread attention. NASA&rsquo;s Instagram photo of Pluto gained the agency 300,000 new followers, according to WIRED magazine. The popularity of NASA&rsquo;s social media accounts &ndash; numbering more than 500 in total &ndash; inspired iPLEX to launch its own Instagram this fall, Milewski said.</p>
+
+		<p>But social media followers may be scrolling through pictures of alien microbes and extraterrestrial traces of life in the future. Last September, the NASA/Library of Congress Astrobiology Symposium invited science fiction expert and UCLA English professor Ursula Heise to Washington, D.C., to explore &ndash; along with other scholars &ndash; the cultural effects of alien life discovery, announcing to attendees that the topic had reached a new urgency. At one point, they discussed extraterrestrial life denialism, a social phenomenon much like the denial of climate change.</p>
+
+		<p>Humans have continuously revised the themes of literary science fiction to reflect society&rsquo;s relationship with the environment, machines and the idea of leaving Earth for a second chance at society, Heise said.</p>
+
+		<p>&ldquo;Things change so fast around us that science fiction, in some sense, is the only genre that can really measure up (to progress),&rdquo; Heise said. &ldquo;We are, unintentionally, terraforming the Earth itself. ... That&rsquo;s one reason that suddenly now science fiction is resonating with our own present and what we think of as our future.&rdquo;</p>
+
+		<p>***</p>
+
+		<p>ELFIN, iPLEX and the physical sciences departments at UCLA will continue to pursue the goals of life discovery, deep-space exploration and interplanetary travel in the coming years. With iPLEX&rsquo;s new collaborative research agreement with NASA&rsquo;s Jet Propulsion Laboratory, UCLA plans on making even more contributions to the race for space.</p>
+
+		<p>In December, Jewitt will pay a visit to Hawaii&rsquo;s W.M. Keck Observatory, home to the world&rsquo;s largest optical and infrared telescopes. He hopes his two-night stay on the dormant volcano will bring him useful data for projects that he is working on &ndash; or hopes to work on soon.</p>
+
+		<p>&ldquo;When I was a kid, teachers always gave me the impression that knowledge is this huge thing people have been accumulating forever, and it&rsquo;s so big you&rsquo;ll never get to the end of it,&rdquo; Jewitt said. &ldquo;But the edge of knowledge is so close. Sometimes it&rsquo;s only one question away.&rdquo;</p>
 	</main>
 		
 </body>
