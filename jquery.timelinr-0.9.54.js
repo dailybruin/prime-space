@@ -54,7 +54,7 @@ jQuery.fn.timelinr = function(options){
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginLeft').substring(0,$(settings.datesDiv).css('marginLeft').indexOf('px')));
 		} else if(settings.orientation == 'vertical') {
 			$(settings.issuesDiv).height(heightIssue*howManyIssues);
-			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/4-heightDate/4);
+			$(settings.datesDiv).height(heightDate*howManyDates).css('marginTop',heightContainer/4-heightDate/3);
 			var defaultPositionDates = parseInt($(settings.datesDiv).css('marginTop').substring(0,$(settings.datesDiv).css('marginTop').indexOf('px')));
 		}
 		
@@ -67,7 +67,7 @@ jQuery.fn.timelinr = function(options){
 			if(settings.orientation == 'horizontal') {
 				$(settings.issuesDiv).animate({'marginLeft':-widthIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
 			} else if(settings.orientation == 'vertical') {
-				$(settings.issuesDiv).animate({'marginTop':-heightIssue*currentIndex+20},{queue:false, duration:settings.issuesSpeed});
+				$(settings.issuesDiv).animate({'marginTop':-heightIssue*currentIndex},{queue:false, duration:settings.issuesSpeed});
 			}
 			$(settings.issuesDiv+' li').animate({'opacity':settings.issuesTransparency},{queue:false, duration:settings.issuesSpeed}).removeClass(settings.issuesSelectedClass).eq(currentIndex).addClass(settings.issuesSelectedClass).fadeTo(settings.issuesTransparencySpeed,1);
 			// prev/next buttons now disappears on first/last issue | bugfix from 0.9.51: lower than 1 issue hide the arrows | bugfixed: arrows not showing when jumping from first to last date
@@ -101,7 +101,10 @@ jQuery.fn.timelinr = function(options){
 			if(settings.orientation == 'horizontal') {
 				$(settings.datesDiv).animate({'marginLeft':defaultPositionDates-(widthDate*currentIndex)},{queue:false, duration:'settings.datesSpeed'});
 			} else if(settings.orientation == 'vertical') {
-				$(settings.datesDiv).animate({'marginTop':defaultPositionDates-(heightDate*currentIndex)+5},{queue:false, duration:'settings.datesSpeed'});
+				$(settings.datesDiv).animate({
+					'marginTop': defaultPositionDates-(heightDate*currentIndex),
+					'height': heightDates + 200
+				},{queue:false, duration:'settings.datesSpeed'});
 			}
 		});
 

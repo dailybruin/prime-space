@@ -14,14 +14,28 @@ body {
 
 #header {
   padding: 1em;
-  background: url("assets/images/background.png") center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 75%; }
+  height: 70%;
+  min-height: 500px; }
   #header #title, #header #author {
     font-family: 'Orbitron', serif; }
+  #header #author {
+    color: white;
+    font-size: 1.2em;
+    letter-spacing: 1.5px; }
+  #header::after {
+    content: "";
+    background: url("assets/images/background.png") center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    z-index: -1; }
 
 a {
   color: #ffffcc;
@@ -56,15 +70,13 @@ h2 {
   height: 300px;
   overflow: hidden;
   margin: 1em auto;
-  position: relative;
-  background: url("../images/dot.gif") 3px top repeat-y; }
+  position: relative; }
 
 #dates {
-  width: 100px;
+  width: 150px;
   height: 300px;
   overflow: hidden;
   float: left;
-  margin-left: 3em;
   margin-right: 2em; }
   #dates li {
     list-style: none;
@@ -72,10 +84,10 @@ h2 {
     font-size: 24px; }
   #dates a {
     line-height: 1.3em;
-    font-size: 1em;
+    font-size: 0.8em;
     padding-bottom: 10px; }
   #dates .selected {
-    font-size: 1.2em; }
+    font-size: 1em; }
 
 #issues {
   height: 300px;
@@ -97,15 +109,12 @@ h2 {
       font-size: 1.1em;
       line-height: 1.2em; }
 
-#next, #prev {
-  border-radius: 5px;
-  height: 2px;
-  width: 100px;
-  background-color: white; }
+#prev {
+  width: 150px; }
 
 main {
-  background-color: rgba(255, 255, 255, 0.6);
-  margin: 5%;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 0 3em 0 3em;
   padding: 1.5em;
   color: black; }
 
