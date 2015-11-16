@@ -3,17 +3,57 @@
   padding: 0; }
 
 body {
-  font-family: 'Aldrich', serif;
-  color: #fff;
+  font-family: 'Roboto Slab', serif;
+  color: white;
   font-size: 14px;
-  background: url("assets/images/stars.jpg") no-repeat center center fixed;
+  background-color: #333333;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover; 
+}
+
+#preheader {
+  text-align: center;
+  background: url("assets/Photos/AYU_1926.jpg") center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#featureimg {
+  margin-left: 2em;
+  margin-right: 2em;
+  padding-top: 5em;
+  max-width: 1000px;
+}
+
+#primelogo {
+  text-align: left;
+}
+
+#primeimg {
+  margin-left: 1em;
+  max-width: 140px;
+}
+
+.subhead {
+  text-align: center;
+  font-size: 2em;
+}
+
+.credit {
+    text-align: center;
+    font-size: 1.1rem;
+    display: block;
+    padding-top: 8em;
+    padding-bottom: 4em;
+    /*margin-bottom: 4em;*/
+}
 
 #header {
-  padding: 1em;
+
   min-height: 500px;
   margin-top: 2em; }
   #header #title, #header #author {
@@ -24,12 +64,12 @@ body {
     letter-spacing: 1.5px; }
   #header::after {
     content: "";
-    background: url("assets/images/background.png") center center;
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.85;
     top: 0;
     left: 0;
     bottom: 0;
@@ -67,6 +107,9 @@ h2 {
   margin-bottom: 20px; }
 
 #timeline {
+  /*background: url("assets/images/stars.jpg") no-repeat center center;*/
+  background: url("assets/images/background.png") center center;
+  background-size: cover;
   height: 300px;
   overflow: hidden;
   margin: 1em auto;
@@ -110,17 +153,18 @@ h2 {
       line-height: 1.2em; }
 
 #prev {
-  width: 150px;
+  width: 4em;
   position: absolute; }
 
 #next {
+  width: 4em;
   position: absolute; }
 
 main {
-  background-color: rgba(255, 255, 255, 0.6);
+
   margin: 0 5% 5% 5%;
   padding: 1.5em;
-  color: black; }
+  color: white; }
   main img {
     display: block;
     margin: auto;
