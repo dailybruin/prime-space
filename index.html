@@ -6,6 +6,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet" type="text/css" />
 	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="style.css" />
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -25,86 +26,100 @@
 </head>
 
 <body>
-	<div id="header">
-		<h1 id="title" class="row">A Space to Dream</h1>
-		<h6 id="author">By Allison Ong</h6>
-		
-		<a href="#" id="prev"><img src="assets/images/prev_arrow.png"></a>
-		<br>
-
-		<div class="row" id="timeline">
-			<ul id="dates">
-				<li><a href="#1900" class="selected">2011</a></li>
-				<li><a href="#1930">2/27/2013</a></li>
-				<li><a href="#1944">7/2014</a></li>
-				<li><a href="#1950">3/6/2015</a></li>
-				<li><a href="#1971">9/19/15</a></li>
-				<li><a href="#1977">11/8/2015</a></li>
-				<li><a href="#1989">2016</a></li>
-				<li><a href="#1999">8/2016</a></li>
-				<li><a href="#2001">Late 2016/Early 2017</a></li>
-				<li><a href="#2011">2020</a></li>
-			</ul>
-
-			<ul id="issues">
-				<li id="1900" class="selected">
-					<h1>2011</h1>
-					<img src="assets/images/2011.svg"  />
-					<p>The UCLA Institute of Planets and Exoplanets, or iPLEX, established by David Jewett, an earth, planetary and space sciences professor.</p>
-				</li>
-				<li id="1930">
-					<h1>Feb. 27, 2013</h1>
-					<img src="assets/images/july2014.svg"  />
-					<p>The Present-Day Habitability of Mars conference was held at UCLA.</p>
-				</li>
-				<li id="1944">
-					<h1>July 2014</h1>
-					<img src="assets/images/feb2013.svg"  />
-					<p>UCLA professor David Paige and his team selected to build a radar for Mars Rover 2020 that will map out the subterranean layer of Mars.</p>
-				</li>
-				<li id="1950">
-					<h1>March 6, 2015</h1>
-					<img src="assets/images/march2015.svg"  />
-					<p>The spacecraft Dawn enters orbit of asteroid Ceres between Mars and Jupiter in a mission led by UCLA professor Christopher Russell.</p>
-				</li>
-				<li id="1971">
-					<h1>Sept. 19, 2015</h1>
-					<img src="assets/images/sept2015.svg"  />
-					<p>iPlex hosts International Observe the Moon Night on the roof of the Mathematical Sciences Building.</p>
-				</li>
-				<li id="1977">
-					<h1>Nov. 8, 2015</h1>
-					<!--<img src="assets/images/august2016.svg"/>-->
-					<p>Annual Exploring Your Universe fair held at the Court of Sciences on UCLA's campus.</p>
-				</li>
-				<li id="1989">
-					<h1>2016</h1>
-					<img src="assets/images/2016.svg"  />
-					<p>iPLEX will host the Asteroid-Meteorite Connection Workshop at UCLA.</p>
-				</li>
-				<li id="1999">
-					<h1>August 2016</h1>
-					<img src="assets/images/august2016.svg"/>
-					<p>Forty rodents will blast off to the International Space Station under a project led by UCLA dentists, plastic surgeons and bio-engineers in search of treatments for osteoporosis.</p>
-				</li>
-				<li id="2001">
-					<h1>Late 2016/Early 2017</h1>
-					<img src="assets/images/late2016early2017.svg"  />
-					<p>UCLA's first fully built satellite, the Electron Losses and Fields Investigation Cube Satellite, or ELFIN CubeSat, ready for space launch.</p>
-				</li>
-				<li id="2011">
-					<h1>2020</h1>
-					<img src="assets/images/2020.svg"  />
-					<p>NASA will send Mars Rover 2020 to Mars.</p>
-				</li>
-			</ul>
+	<div id="preheader">
+		<div id="primelogo">
+			<a href="http://prime.dailybruin.com">
+				<img id="primeimg" src="assets/prime-logo-light.svg">
+			</a>
 		</div>
-		
-		<a href="#" id="next"><img src="assets/images/next_arrow.png"></a>
-
+		<img id="featureimg" src="assets/space-to-dream-logo.svg">
+		<span class="credit">
+           Written by <b>Allison Ong</b>
+           <br>
+           Photos by <b>Austin Yu</b>
+        </span>
 	</div>
+	
+	
 
 	<main>
+		<div id="header">
+			<!-- <h1 id="title" class="row">A Space to Dream</h1> -->
+			<a href="#" id="prev"><img src="assets/images/prev_arrow.png"></a>
+			<br>
+
+			<div class="row" id="timeline">
+				<ul id="dates">
+					<li><a href="#1900" class="selected">2011</a></li>
+					<li><a href="#1930">2/27/2013</a></li>
+					<li><a href="#1944">7/2014</a></li>
+					<li><a href="#1950">3/6/2015</a></li>
+					<li><a href="#1971">9/19/15</a></li>
+					<li><a href="#1977">11/8/2015</a></li>
+					<li><a href="#1989">2016</a></li>
+					<li><a href="#1999">8/2016</a></li>
+					<li><a href="#2001">Late 2016/Early 2017</a></li>
+					<li><a href="#2011">2020</a></li>
+				</ul>
+
+				<ul id="issues">
+					<li id="1900" class="selected">
+						<h1>2011</h1>
+						<img src="assets/images/2011.svg"  />
+						<p>The UCLA Institute of Planets and Exoplanets, or iPLEX, established by David Jewett, an earth, planetary and space sciences professor.</p>
+					</li>
+					<li id="1930">
+						<h1>Feb. 27, 2013</h1>
+						<img src="assets/images/july2014.svg"  />
+						<p>The Present-Day Habitability of Mars conference was held at UCLA.</p>
+					</li>
+					<li id="1944">
+						<h1>July 2014</h1>
+						<img src="assets/images/feb2013.svg"  />
+						<p>UCLA professor David Paige and his team selected to build a radar for Mars Rover 2020 that will map out the subterranean layer of Mars.</p>
+					</li>
+					<li id="1950">
+						<h1>March 6, 2015</h1>
+						<img src="assets/images/march2015.svg"  />
+						<p>The spacecraft Dawn enters orbit of asteroid Ceres between Mars and Jupiter in a mission led by UCLA professor Christopher Russell.</p>
+					</li>
+					<li id="1971">
+						<h1>Sept. 19, 2015</h1>
+						<img src="assets/images/sept2015.svg"  />
+						<p>iPlex hosts International Observe the Moon Night on the roof of the Mathematical Sciences Building.</p>
+					</li>
+					<li id="1977">
+						<h1>Nov. 8, 2015</h1>
+						<!--<img src="assets/images/august2016.svg"/>-->
+						<p>Annual Exploring Your Universe fair held at the Court of Sciences on UCLA's campus.</p>
+					</li>
+					<li id="1989">
+						<h1>2016</h1>
+						<img src="assets/images/2016.svg"  />
+						<p>iPLEX will host the Asteroid-Meteorite Connection Workshop at UCLA.</p>
+					</li>
+					<li id="1999">
+						<h1>August 2016</h1>
+						<img src="assets/images/august2016.svg"/>
+						<p>Forty rodents will blast off to the International Space Station under a project led by UCLA dentists, plastic surgeons and bio-engineers in search of treatments for osteoporosis.</p>
+					</li>
+					<li id="2001">
+						<h1>Late 2016/Early 2017</h1>
+						<img src="assets/images/late2016early2017.svg"  />
+						<p>UCLA's first fully built satellite, the Electron Losses and Fields Investigation Cube Satellite, or ELFIN CubeSat, ready for space launch.</p>
+					</li>
+					<li id="2011">
+						<h1>2020</h1>
+						<img src="assets/images/2020.svg"  />
+						<p>NASA will send Mars Rover 2020 to Mars.</p>
+					</li>
+				</ul>
+			</div>
+			
+			<a href="#" id="next"><img src="assets/images/next_arrow.png"></a>
+
+		</div>
+
 		<p>The movement to colonize Mars was founded by humans who dream of seeing footprints in the crimson dust of the Red Planet.</p>
 
 		<p>Technological advances have made interplanetary travel possible, if not yet feasible. In October, NASA released a <a href="http://www.nasa.gov/press-release/nasa-releases-plan-outlining-next-steps-in-the-journey-to-mars/">plan</a> detailing the steps it&rsquo;s taking to land astronauts on Mars as early as the 2030s.</p>
@@ -122,7 +137,7 @@
 
 		<p>A curiosity about space begins with the students.</p>
 
-		<p>Stargazing in school</p>
+		<p class="subhead">Stargazing in school</p>
 
 		<p>Icy comets, asteroids and other celestial bodies rain <a href="http://rosetta.jpl.nasa.gov/science/comet-primer/what-comet">about 40,000 tons</a> of primitive cosmic dust on Earth every year, occasionally igniting at our atmosphere&rsquo;s edge to paint bright meteoric strokes across the canvas of our sky.</p>
 
@@ -160,7 +175,7 @@
 
 		<p>Many UCLA students already are.</p>
 
-		<p>Mission Control</p>
+		<p class="subhead">Mission Control</p>
 
 		<div class="row">
 			<img class="small-12 large-6 columns" src="assets/Photos/AYU_9413.jpg"/>
@@ -171,11 +186,6 @@
 		<p>On a regular Tuesday in the Mathematical Sciences Building, engineers pop a little satellite out of an oven at 212 degrees Fahrenheit.</p>
 
 		<p>Without its green circuit boards, the Electron Losses and Fields Investigation, or <a href="http://elfin.igpp.ucla.edu/">ELFIN</a>, satellite resembles the bare framework of a house. A researcher throws on his lab coat and begins to clothe the miniature satellite, known as CubeSat, in circuit boards with special fasteners, showing a fellow researcher how to select the right screwdriver for the job.</p>
-
-		<div class="row">
-			<img class="small-12 large-6 columns" src="assets/Photos/AYU_2015.jpg"/>
-			<img class="small-12 large-6 columns" src="assets/Photos/AYU_9503.jpg"/>
-		</div>
 
 		<p>In late 2016 or early 2017, NASA will shoot the satellite into orbit so it can analyze space weather phenomena. NASA and the National Science Foundation have awarded ELFIN more than $1 million in funding since NASA selected it for the CubeSat Launch Initiative <a href="http://dailybruin.com/2014/08/18/forecast-from-space-satellite-built-by-student-team-may-help-predict-magnetic-storms/">in 2014</a>.</p>
 
@@ -197,7 +207,7 @@
 
 		<p>&ldquo;This is my telescope,&rdquo; Arriaga joked, tinkering with the computers and controls within the dome. &ldquo;This one will keep going for a very long time.&rdquo;</p>
 
-		<p>Spacewalk</p>
+		<p class="subhead">Spacewalk</p>
 
 		<p>As a UCLA professor, David Paige may not breathe Martian air during his lifetime, but the scientific contraption he&rsquo;s helping to build might get a whiff.</p>
 
@@ -206,6 +216,11 @@
 		<p>&ldquo;My colleague from Norway called me up and asked me if I wanted to get involved,&rdquo; said Paige, chuckling. &ldquo;It&rsquo;s a little bit like a couple guys deciding to take a weekend trip to Las Vegas.&rdquo;</p>
 
 		<p>In 2013, Paige chaired the international Present-Day Habitability of Mars <a href="http://mepag.nasa.gov/meeting/2013-02/present_day_habitability_mepag_report.pdf">conference</a> at UCLA. During the <a href="https://astrobiology.nasa.gov/seminars/featured-seminar-channels/workshops-without-walls/2013/2/4/present-day-habitability-of-mars-workshop/">broadcast</a> event, experts from all over the world, including from Russia and Germany, discussed the prospects and evidence of biological activity on Mars.</p>
+
+		<div class="row">
+			<img class="small-12 large-6 columns" src="assets/Photos/AYU_2015.jpg"/>
+			<img class="small-12 large-6 columns" src="assets/Photos/AYU_9503.jpg"/>
+		</div>
 
 		<p>&ldquo;Understanding our place in the solar system and universe is important culturally, just to give people perspective,&rdquo; Paige said. &ldquo;I think it&rsquo;s also the function of a university to reach out to the community and share what we&rsquo;re learning, discovering or teaching.&rdquo;</p>
 
@@ -217,13 +232,9 @@
 
 		<p>&ldquo;Things change so fast around us that science fiction, in some sense, is the only genre that can really measure up (to progress),&rdquo; Heise said. &ldquo;We are, unintentionally, terraforming the Earth itself. ... That&rsquo;s one reason that suddenly now science fiction is resonating with our own present and what we think of as our future.&rdquo;</p>
 
-		<p>***</p>
+		<p class="subhead">***</p>
 
 		<p>ELFIN, iPLEX and the physical sciences departments at UCLA will continue to pursue the goals of life discovery, deep-space exploration and interplanetary travel in the coming years. With iPLEX&rsquo;s new collaborative research <a href="http://newsroom.ucla.edu/dept/faculty/may-27-ucla-and-jpl-to-sign-planetary-sciences-agreement-host-daylong-workshop">agreement</a> with NASA&rsquo;s Jet Propulsion Laboratory, UCLA plans on making even more contributions to the race for space.</p>
-
-		<div class="row">
-			<img class="small-12 columns" src="assets/Photos/AYU_1926.jpg"/>
-		</div>
 
 		<p>In December, Jewitt will pay a visit to Hawaii&rsquo;s W.M. Keck Observatory, home to the world&rsquo;s largest optical and infrared telescopes. He hopes his two-night stay on the dormant volcano will bring him useful data for projects that he is working on &ndash; or hopes to work on soon.</p>
 
